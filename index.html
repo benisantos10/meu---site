@@ -1,1 +1,121 @@
-<h1>FUNCIONOU</h1>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ganhar Dinheiro Online</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+header {
+  background: linear-gradient(90deg, #0d6efd, #003c8f);
+  color: white;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.btn {
+  background: #28a745;
+  color: white;
+  padding: 18px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 20px;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.05);}
+  100% {transform: scale(1);}
+}
+
+.timer {
+  font-size: 22px;
+  color: red;
+  margin-top: 15px;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>💰 Descubra Como Ganhar Dinheiro Online</h1>
+  <p>Mesmo começando do zero e usando só o celular</p>
+</header>
+
+<div class="container">
+
+  <div class="box">
+    <h2>🔥 Método simples e comprovado</h2>
+    <p>Aprenda passo a passo como gerar renda na internet.</p>
+  </div>
+
+  <div class="box">
+    <h2>✅ Para iniciantes</h2>
+    <p>Não precisa experiência, nem aparecer.</p>
+  </div>
+
+  <div class="box">
+    <h2>💸 Pessoas comuns já estão lucrando</h2>
+    <p>Você pode ser o próximo.</p>
+  </div>
+
+  <a class="btn" href="https://go.hotmart.com/D105466598M" target="_blank">
+    QUERO COMEÇAR AGORA
+  </a>
+
+  <div class="timer" id="timer">
+    ⏳ Oferta expira em: 05:00
+  </div>
+
+</div>
+
+<script>
+let tempo = 300;
+
+function atualizarTimer() {
+  let minutos = Math.floor(tempo / 60);
+  let segundos = tempo % 60;
+
+  document.getElementById("timer").innerHTML =
+    "⏳ Oferta expira em: " +
+    String(minutos).padStart(2, '0') + ":" +
+    String(segundos).padStart(2, '0');
+
+  tempo--;
+
+  if (tempo < 0) tempo = 300;
+}
+
+setInterval(atualizarTimer, 1000);
+</script>
+
+</body>
+</html>
